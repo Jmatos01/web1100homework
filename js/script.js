@@ -12,21 +12,21 @@ var player = {
 }
 
 var questions = {
-  L2Q1: "Deli is now packed. You grab a ticket and it says 3, but the current is 54. What is your next move?",
-  L2Q2: "They ran out of the good stuff, you only have generic crap. Buy anyway???",
+  L2Q1: "Jimmy's Boss tells him he's a great listener and will place him close to his very attractive assitant, What do you do?",
+  L2Q2: "Later on The Boss explains to Jimmy that he doesnt like dogs because he was bitten when he was a small boy..... How does Jimmy repond?",
   L2Q3: "The fruit is delicious and very fresh. Everything is good until you see the prices.  $5 for pineapples? $6 for grapes? You aren't trying to spend this...Should you buy some? Should go somewhere else? Or should you simply grab a few while no one is watching?",
-  L3Q1: "You continue to wait...and wait...and wait. You look at your ticket again and it still says 3, but the ticket counter says only 72? What are you going to do?",
-  L3Q2: "Where would you like to go?",
-  L3Q3: "You buy a few Marie Calendar frozen dinners, if only if I had a microwave??? Let's go find something that I don't have to cook myself? Where do you want to go?",
-  L3Q4: "You bought some expensive fruit. You snack on a few and they were delicious. But...it didn't help you hunger, it makes you more hungry."
+  L3Q1: "As Jimmy sits in his new office he gets a tap from a co-worker who shortly after asks Jimmy for some help? what does Jimmy do?",
+  L3Q2: "Jimmy's Boss shows Jimmy his wedding ring.... and asks him who does he think he's married to?",
+  L3Q3: "Jimmy's Boss thanks him for listening and asked him if he ever read a book called how to win friends and influence people? what does Jimmy say? ",
+  L3Q4: "Oh oh a problem Arises! Someone forgot to fix an IF statement in java script!, Jimmy knows Java script like the back of his hands! A higher up asks Jimmy to resolve the issue!, What does Jimmy do!!!?"
 }
 
 var buttons = {
-  L2A1: ["Continue to wait", "Yes", "Buy some fruit"],
-  L2A2: ["Go somewhere else", "No...but still yes", "Go somewhere else"],
-  L2A3: ["Grab a few when no one is looking"],
-  L3A1: ["Continue to wait still", "Frozen food isle", "Go to deli", "Continue to wait still", "Go to deli"],
-  L3A2: ["Go somewhere else finally", "Fruit Section", "Go to fruit section", "Go somewhere else finally", "Go to Frozen Food isle"]
+  L2A1: ["Shakes his Boss's hand with gratitude!", "Genuingly feels sorry for his Boss's childhood trauma", "Just laughs it off..."],
+  L2A2: ["Says thank you and then asks about his very attractice assistant.", "Tells his boss he's a chump", "Sincierly Apologizes!"],
+  L2A3: ["Laughs awkwardly and begins to walk away slowly..."],
+  L3A1: ["Without hesitation helps his co-worker!", "awkwardly apologizes", "Jimmy says its a great book and alot of people should read it", "Continue to wait still", "Says sure captain and works hard to resolve the issue!"],
+  L3A2: ["Tells his co-worker he's a bit too busy right now.", "walks away awkwardly", "no, he hasnt but should look into it!", "Tells his boss he will try his best but he cant guarantee it!", "Go to Frozen Food isle"]
 }
 
 
@@ -151,10 +151,10 @@ function l2answrsScen3(selected){
     `
       <div class="level L3">
         <p class="L3Q1">
-          Where do you want to go?
+         As you start getting ready to go to lunch, a co-worker tells you he needs help submitting work into his github!, what do you do!??
         </p>
-        <button class="L3A1">Go to deli</button>
-        <button class="L3A2">Go to frozen food isle</button>
+        <button class="L3A1">Helps him</button>
+        <button class="L3A2">Tells him to reference his textbook</button>
       </div>
     `
     var L3A1 = document.querySelector(".L3A1")
@@ -182,11 +182,11 @@ function l2answrsScen3(selected){
     `
       <div class="level L3">
         <p class="L3Q1">
-          You grab a few, they are delicious. However, an older individual saw you and that individual is a stickler for the rules. That person informs security and you have to go hide. Where would you like to go?
+         The Boss and co-worker asks Jimmy to complete a developing problem he has ran into.... what does Jimmy do!?
         </p>
-        <button class="L3A1">Hide in deli section</button>
-        <button class="L3A2">Hide in frozen food isle</button>
-        <button class="L3A3">Hide in bath and home isle</button>
+        <button class="L3A1">Tells him he is ready for the challenge!</button>
+        <button class="L3A2">Tells his boss he needs to grow up</button>
+        <button class="L3A3">Tells them he is there to help!</button>
       </div>
     `
     var L3A1 = document.querySelector(".L3A1")
@@ -225,11 +225,11 @@ function l3answersScen1(selected){
     `
       <div class="level L4">
         <p class="L4Q1">
-          Someone you find attractive, walks next to you. You try to make eye contact but the individual walks away. You look down forgetting about the incident and you continue to shop. You look up moments later and you see that person looking directly at you now, smiling. You give them a smile back but then thier significant other also makes eye contact andt they are not happy. What do you do next?
+          Well go figure! Your co-worker is actually the Boss's son! His name is Johnson and tells Jimmy he's a great developer! Johnson asks Jimmy they should work together more often! what does Jimmy do?
         </p>
-        <button class="L4A1">Hide in deli section</button>
-        <button class="L4A2">Hide in frozen food isle</button>
-        <button class="L4A3">Hide in bath and home isle</button>
+        <button class="L4A1">Highly agrees and Thanks Johnson for his Compliment!</button>
+        <button class="L4A2">Says thanks and starts blabing about himself </button>
+        <button class="L4A3">Says thanks..</button>
       </div>
     `
     var L4A1 = document.querySelector(".L4A1")
@@ -310,11 +310,11 @@ function backToBeginning(){
   main.innerHTML = `
     <div class="level L1">
       <p class="L1Q1">
-        You go to the supermarket? You are kind of hungry so you go where?
+        Problem is resolved and your co-worker is actually the Boss's floor manager and thanks you for helping him out and invites out for lunch with him and his boss when ever!... what do you do?
       </p>
-      <button class="L1A1">Go To Deli</button>
-      <button class="L1A2">Go To Frozen Food Isle</button>
-      <button class="L1A3">Go To Fruit Section</button>
+      <button class="L1A1">Accept</button>
+      <button class="L1A2">Tells him he's down for free food</button>
+      <button class="L1A3">Tells him he's vegan....</button>
     </div>
   `
   var L1A1 = document.querySelector(".L1A1")
@@ -372,3 +372,51 @@ L1A1.addEventListener('click', function(event){
       btn.disabled = false
     })
   })
+
+
+
+  function l4answersScen1(selected){
+    if(selected==="L4A1"){
+      //Continue to wait still
+      console.log(selected)
+      main.innerHTML += 
+      `
+        <div class="level L5">
+          <p class="L5Q1">
+            THIS IS A TEST 
+          </p>
+          <button class="L5A1">TEST</button>
+          <button class="L5A2">TEST </button>
+          <button class="L5A3">TEST</button>
+        </div>
+      `
+      var L5A1 = document.querySelector(".L5A1")
+      var L5A2 = document.querySelector(".L5A2")
+      var L5A3 = document.querySelector(".L5A3")
+      L5A1.addEventListener('click', function(event){
+        l4answersScen5(event.target.classList[0])
+        var s = document.querySelectorAll('.L2 button')
+        s.forEach(function(btn){
+          btn.disabled
+        })
+      })
+      L5A2.addEventListener('click', function(event){
+        l4answersScen5(event.target.classList[0])
+        var s = document.querySelectorAll('.L2 button')
+        s.forEach(function(btn){
+          btn.disabled
+        })
+      })
+      L5A3.addEventListener('click', function(event){
+        l4answersScen5(event.target.classList[0])
+        var s = document.querySelectorAll('.L2 button')
+        s.forEach(function(btn){
+          btn.disabled
+        })
+      })
+      return
+    }
+    if(selected === "L4A2"){
+      console.log(selected)
+    }
+  }

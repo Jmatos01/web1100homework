@@ -1,13 +1,28 @@
 body{
+  background: linear-gradient(to right, rgba(34, 107, 155, 0.507), rgba(0, 255, 21, 0.856));
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
 header h2{
+
   text-align: center;
+  text-shadow: 3px 2px grey;
+  color: white;
 }
 
 .level{
   text-align: center;
+}
+
+
+p{
+  color: white;
+}
+
+button{ 
+  color: white;
+  background-color:grey;
+  border: 2px solid rgb(32, 97, 34); 
 }
